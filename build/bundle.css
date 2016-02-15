@@ -1,0 +1,81 @@
+body { font-family: sans-serif; }
+
+h1, main > p { text-align: center; }
+
+main > p { margin-top: 1rem; }
+
+button {
+  padding: 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  color: #000;
+  text-shadow: 0 1px 1px #fff;
+  background: #eee;
+  box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+button#add-list {
+  margin: 0 auto 1rem auto;
+  display: block;
+}
+
+div#lists {
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 0 1rem;
+  border-radius: 1rem;
+}
+
+div#lists p {
+  margin: 0 0 1rem 0;
+}
+
+div#lists div {
+  background: rgba(0, 0, 0, 0.2);
+  margin: 0 1rem 1rem 0;
+  padding: 1rem 1rem 0 1rem;
+  flex: 1;
+}
+div#lists div:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+div#lists div:last-child {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+div#lists div > button {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+div#lists ul {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  list-style: none;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+div#lists li {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 5.5rem;
+  position: relative;
+}
+
+div#lists li button {
+  width: 5rem;
+  position: absolute;
+  padding: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+div#lists li:last-child {
+  margin-bottom: 0;
+}
